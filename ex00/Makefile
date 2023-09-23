@@ -6,14 +6,14 @@
 #    By: vkuzmin <zxcmasterass@gmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/23 02:00:57 by vkuzmin           #+#    #+#              #
-#    Updated: 2023/09/23 03:30:27 by vkuzmin          ###   ########.fr        #
+#    Updated: 2023/09/23 03:34:37 by vkuzmin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = g++
 CFLAGS = -Wall -Wextra -Werror --std=c++98 -fsanitize=address
-TARGET = Animals
-SRCS = main.cpp Bureaucrat.cpp Bureaucrat.hpp
+TARGET = buro
+SRCS = main.cpp Bureaucrat.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)
