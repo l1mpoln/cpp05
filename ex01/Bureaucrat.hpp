@@ -6,7 +6,7 @@
 /*   By: vkuzmin <zxcmasterass@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 03:28:19 by vkuzmin           #+#    #+#             */
-/*   Updated: 2023/09/23 07:39:29 by vkuzmin          ###   ########.fr       */
+/*   Updated: 2023/09/24 05:41:37 by vkuzmin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,13 @@ private:
 public:
     void signForm(Form &form);
 
-    class GradeTooHighException : public std::exception {
+    class GradeTooHighException : public std::exception 
+    {
         public:
             virtual const char* what() const throw() { return "Grade too high"; }
     };
-    class GradeTooLowException : public std::exception {
+    class GradeTooLowException : public std::exception 
+    {
         public:
             virtual const char* what() const throw() { return "Grade too low"; }
     };
