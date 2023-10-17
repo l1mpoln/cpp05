@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vkuzmin <vkuzmin@student.42nice.fr>        +#+  +:+       +#+        */
+/*   By: vkuzmin <zxcmasterass@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 05:39:41 by vkuzmin           #+#    #+#             */
-/*   Updated: 2023/10/17 19:00:53 by vkuzmin          ###   ########.fr       */
+/*   Updated: 2023/09/24 06:23:29 by vkuzmin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,20 +35,7 @@ void ShrubberyCreationForm::execute(const Bureaucrat& executor) const
         throw ShrubberyCreationForm::FileOpenException();
     }
 
-    file << "            # #### ####\n"
-    "        ### \\/#|### |/####\n"
-    "        ##\\/#/ \\||/##/_/##/_#\n"
-    "       ###  \\/###|/ \\/ # ###\n"
-    "    ##_\\_#\\_\\## | #/###_/_####\n"
-    "    ## #### # \\ #| /  #### ##/##\n"
-    "    __#_--###`  |{,###---###-~\n"
-    "                \\ }{\n"
-    "                }}{\n"
-    "                }}{\n"
-    "            ejm  {{}\n"
-    "        , -=-~{ .-^- _\n"
-    "                `}\n"
-    "                 {" << std::endl;
+    file << "ASCII art of a tree" << std::endl;
     file.close();
 }
 
